@@ -29,4 +29,24 @@ Module Main ()
     DECLARE Real duration = 0.0
     DECLARE String activity_name = ""
 
+    DISPLAY "============================"
+    DISPLAY "  CAMPUS FITNESS TRACKER    "
+    DISPLAY "============================"
+
+    WHILE True
+        // STEP 1: Main Menu & Input Validation
+        DISPLAY "--- MAIN MENU ---"
+        DISPLAY "1. Log Cardio Workout"
+        DISPLAY "2. Log Strength Workout"
+        DISPLAY "3. View Activity Summary"
+        DISPLAY "4. Exit"
+        DISPLAY "Enter your choice (1-4):"
+        INPUT main_choice
+
+
+    WHILE main_choice != 1 AND main_choice != 2 AND main_choice != 3 AND main_choice != 4
+        DISPLAY "Invalid. Choice must be 1, 2, 3, or 4. Try Again:"
+        INPUT main_choice
+    END WHILE
+
 ```
