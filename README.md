@@ -20,7 +20,7 @@ Fitness Tracker Pseudocode and Flowchart and IPO Chart
 
 ## 3. Pseudocode  
 ```
-Module Main
+Module Main ()
     DECLARE Integer total_cardio = 0
     DECLARE Integer total_strength = 0
     DECLARE Integer total_activity = 0
