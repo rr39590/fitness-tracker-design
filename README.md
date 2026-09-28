@@ -97,7 +97,7 @@ Module Main ()
         END WHILE
 
 
-        IF sub_choice == 2 THEN
+        IF sub_choice == 1 THEN
             activity_name = "Upper Body"
         ELSE IF sub_choice == 2 THEN
             activity_name = "Lower Body"
