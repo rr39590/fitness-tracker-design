@@ -117,4 +117,25 @@ Module Main ()
          total_cardio = total_strength + duration
         DISPLAY "Successfully added " , duration, "minutes for ", activity_name, "."
 
+
+    ELSE IF main_choice == 3 THEN
+        total_active = total_cardio + total_strength"
+        DISPLAY "=========================================="
+        DISPLAY "           ACTIVITY SUMMARY               "         
+        DISPLAY "=========================================="
+        DISPLAY "Total Cardio:", total_cardio
+        DISPLAY "Total Strength:", total_strength
+        DSIPLAY "Total Active:", total_active
+
+        IF total_active >= 120 THEN
+            DISPLAY "Status: Goal Achieved!"
+        ELSE IF total_active > 0 THEN
+            DISPLAY "Status: Keep Going!", 
+========================================== 
+
+
+
+
+
+
 ```
