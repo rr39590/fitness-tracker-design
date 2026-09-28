@@ -44,9 +44,34 @@ Module Main ()
         INPUT main_choice
 
 
-    WHILE main_choice != 1 AND main_choice != 2 AND main_choice != 3 AND main_choice != 4
-        DISPLAY "Invalid. Choice must be 1, 2, 3, or 4. Try Again:"
-        INPUT main_choice
-    END WHILE
+        WHILE main_choice != 1 AND main_choice != 2 AND main_choice != 3 AND main_choice != 4
+            DISPLAY "Invalid. Choice must be 1, 2, 3, or 4. Try Again:"
+            INPUT main_choice
+        END WHILE
+
+        // STEP 2: Route Submenus and Actions
+        IF main_choice == 1 THEN
+            DISPLAY "--- CARDIO MENU ---"
+            DSIPLAY "1. Running / Jogging"
+            DISLPAY"2. Cycling"
+            DISPLAY "3. Swimming"
+            DISPLAY "Enter cardio activity (1-3):"
+            INPUT sub_choice
+
+        WHILE sub_choice != 1 AND sub_choice != 2 AND sub_choice !=3
+            DISPLAY "Invalid. Please enter 1, 2, or 3. Try Again!"
+            INPUT sub_choice
+        END WHILE
+
+
+        IF sub_choice == 1 THEN
+            activity_name = "Running / Jogging"
+        ELSE IF sub_choice == 2 THEN
+            activity_name = "Cycling"
+        ELSE
+            activity_name = "Swimming"
+        END IF
+
+
 
 ```
