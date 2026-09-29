@@ -128,10 +128,14 @@ Module Main ()
         DSIPLAY "Total Active:", total_active
 
         IF total_active >= 120 THEN
-            DISPLAY "Status: Goal Achieved!"
+            DISPLAY "Status: Goal Achieved! You exceeded 120 weekly active minutes"
         ELSE IF total_active > 0 THEN
-            DISPLAY "Status: Keep Going!", 
-========================================== 
+            DISPLAY "Status: Keep Going!", (120 - total_active), "more minutes needed to hit"
+            DISPLAY "your weekly target."
+        ELSE
+            DISPLAY "Status: No workout logged yet."
+        END IF
+        DISPLAY "=========================================="
 
 
 
