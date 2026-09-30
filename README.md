@@ -136,7 +136,13 @@ Module Main ()
             DISPLAY "Status: No workout logged yet."
         END IF
         DISPLAY "=========================================="
+    ELSE IF main_choice == 4 THEN
+        DISLPAY "Thank you for using Campus Fitness Tracker! Stay Active!"
+        BREAK
+    END IF
+  END WHILE
 
+END MODULE
 
 
 
